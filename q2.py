@@ -7,8 +7,13 @@ def find_and_replace(lst, find_val, replace_val):
     """
     return
 
+if not isinstance(lst, list):
+        return -1
+    return [replace_val if item == find_val else item for item in lst]
 
 # Task 2
 # Invoke the function "find_and_replace" using the following scenarios:
 # - [1, 2, 3, 4, 2, 2], 2, 5
+    find_and_replace([1, 2, 3, 4, 2, 2], 2, 5) -> [1, 5, 3, 4, 5, 5]
 # - ["apple", "banana", "apple"], "apple", "orange"
+    find_and_replace(["apple", "banana", "apple"], "apple", "orange") -> ["orange", "banana", "orange"]
