@@ -7,8 +7,25 @@ def check_divisibility(num, divisor):
     """
     return
 
+    # Validate that both inputs are numeric
+    if not isinstance(num, (int, float)) or not isinstance(divisor, (int, float)):
+        return -1
+    
+    # Check for division by zero
+    if divisor == 0:
+        return False
+    
+    # Check if num is divisible by divisor
+    if num % divisor == 0:
+        return True
+    else:
+        return False
 
 # Task 2
 # Invoke the function "check_divisibility" using the following scenarios:
+
 # - 10, 2
+print(check_divisibility(10, 2))
+
 # - 7, 3
+print(check_divisibility(7, 3))
