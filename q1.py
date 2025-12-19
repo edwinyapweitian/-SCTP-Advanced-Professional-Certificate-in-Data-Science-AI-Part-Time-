@@ -23,6 +23,7 @@ def swap(x, y):
 # - "Apple", 10
 swap("Apple", 10)
 # Output: -1
+
 # - 9, 17
 swap(9, 17)
 # Output: 17 9
