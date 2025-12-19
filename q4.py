@@ -15,7 +15,7 @@ def string_reverse(s):
 # Invoke the function "string_reverse" using the following scenarios:
 
 # - "Hello World"
-string_reverse("Hello World")
+print(string_reverse("Hello World"))
 
 # - "Python"
-string_reverse("Python")
+print(string_reverse("Python"))
