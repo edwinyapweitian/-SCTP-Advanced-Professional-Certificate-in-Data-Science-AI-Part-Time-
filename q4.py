@@ -7,8 +7,15 @@ def string_reverse(s):
     """
     return
 
+  if not isinstance(s, str):
+        return -1
+    return s[::-1]
 
 # Task 2
 # Invoke the function "string_reverse" using the following scenarios:
+
 # - "Hello World"
+string_reverse("Hello World")
+
 # - "Python"
+string_reverse("Python")
